@@ -1,0 +1,22 @@
+{
+  "preset": "ts-jest",
+  "testEnvironment": "jsdom",
+  "moduleNameMapper": {
+    "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+  },
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.ts"
+  ],
+  "testMatch": [
+    "<rootDir>/tests/**/*.test.(ts|tsx)"
+  ],
+  "collectCoverageFrom": [
+    "src/**/*.{ts,tsx}",
+    "!src/index.tsx",
+    "!src/setupTests.ts"
+  ],
+  "coverageReporters": [
+    "lcov",
+    "text-summary"
+  ]
+}
